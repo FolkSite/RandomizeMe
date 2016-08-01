@@ -201,7 +201,7 @@ window.addEventListener("DOMContentLoaded", function(){
             border: 1px solid black;
         }
     </style>
-    <script src="node_modules/randomizeme/index.js"></script>
+    <script src="node_modules/randomizeme/randomizeme.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
