@@ -2,7 +2,7 @@
   "name": "randomizeme",
   "version": "1.0.0",
   "description": "String random builder",
-  "main": "index.js",
+  "main": "randomizeme.js",
   "directories": {
     "test": "test"
   },

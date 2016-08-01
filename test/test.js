@@ -1,6 +1,6 @@
 'use strict';
 
-var RandomizeMe = require('../index');
+var RandomizeMe = require('../randomizeme');
 
 var Randomize = new RandomizeMe();
 

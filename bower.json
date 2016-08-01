@@ -1,0 +1,30 @@
+{
+	"name": "randomizeme",
+	"description": "String random builder",
+	"keywords": [
+		"random",
+		"RandomizeMe"
+	],
+	"main": [
+		"randomizeme.js"
+	],
+	"authors": [
+		"Yarkov Aleksey <yarkov_aleksei@mail.ru>"
+	],
+	"version": "1.0.0",
+	"moduleType": "globals",
+	"license": "MIT",
+	"homepage": "https://yarkovaleksei.github.io/RandomizeMe",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"docs",
+		"test",
+		"tests"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yarkovaleksei/RandomizeMe"
+	}
+}
