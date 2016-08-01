@@ -9,6 +9,12 @@
 $ npm i -S randomizeme
 ```
 
+**BOWER:**
+
+```bash
+$ bower install --save randomizeme
+```
+
 **Или можете просто клонировать репозиторий для доработки:**
 
 ```bash
