@@ -9,12 +9,22 @@
   "scripts": {
     "test": "node ./test/test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarkovaleksei/RandomizeMe.git"
+  },
   "keywords": [
     "random",
     "RandomizeMe"
   ],
-  "author": "Yarkov Aleksey",
+  "authors": [
+    "Yarkov Aleksey <yarkov_aleksei@mail.ru>"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yarkovaleksei/RandomizeMe/issues"
+  },
+  "homepage": "https://yarkovaleksei.github.com/RandomizeMe",
   "devDependencies": {
     "ink-docstrap": "^1.2.1",
     "jsdoc": "^3.4.0"
