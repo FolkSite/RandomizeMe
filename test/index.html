@@ -5,8 +5,20 @@
 	<title>RandomizeMe</title>
 	<style>
 		.container {
-			width: 50%;
+			width: 60%;
 			margin: 0 auto;
+			text-align: center;
+		}
+		.container:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		.inner {
+			width: 100%;
+			display: inline-block;
+			vertical-align: middle;
 		}
 		#result, #text {
 			width: 100%;
@@ -18,9 +30,11 @@
 </head>
 <body>
 	<div class="container">
-		<textarea id="text">Нашего директора зовут [[ objects ]] и поэтому наш [[ who ]] [[ action ]] вам [[ food ]].</textarea>
-		<input type="button" id="test" value="Сгенерировать текст">
-		<div id="result"></div>
+		<span class="inner">
+			<textarea id="text">Нашего директора зовут [[ names ]] и поэтому наш [[ who ]] [[ action ]] вам [[ food ]].</textarea>
+			<input type="button" id="test" value="Сгенерировать текст">
+			<div id="result"></div>
+		</span>
 	</div>
 
 	<script type="text/javascript">
@@ -33,18 +47,23 @@
 			},
 			actions: {
 				number: function(min, max) {
+					// Переопределяем встроенный метод number
 					return Randomize.tools.Number(min, max);
 				},
-				choice: function() {
-					return Randomize.tools.Choice(...arguments);
+				choice: function(array, num, mode) {
+					// Переопределяем встроенный метод choice
+					return Randomize.tools.Choice(array, num, mode);
 				},
-				objects: function() {
-					let $array = [
-						{name:"Федор"}, 
-						{name:"Акакий"}, 
-						{name:"Феоктист"}, 
-						{name:"Иван"}
-					];
+				names: function() {
+					let $array = [{
+						name: "Федор"
+					}, {
+						name: "Акакий"
+					}, {
+						name: "Феоктист"
+					}, {
+						name: "Иван"
+					}];
 					let $value = Randomize.tools.Choice($array, 1, true);
 					return $value.name;
 				},
@@ -59,13 +78,13 @@
 					return $value;
 				},
 				food: function() {
-					let $count = Randomize.render(' по цене [[ number(50, 150) ]] р. за [[ number(1, 10) ]] [[ choice(["кг", "г"],1,true) ]]');
+					let $count = Randomize.render(' по цене [[ number(50, 150) ]] р. за [[ number(1, 10) ]] [[ choice(["кг", "г", "шт"], 1, true) ]]');
 					let $array = ["селёдочку", "колбаску", "грибочки", "огурчики"];
 					let $index = Randomize.tools.Choice($array);
 					return $array[$index] + $count;
 				}
 			}
-		}
+		};
 
 		Randomize.configure(options);
 

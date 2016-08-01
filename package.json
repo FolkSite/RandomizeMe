@@ -14,5 +14,9 @@
     "RandomizeMe"
   ],
   "author": "Yarkov Aleksey",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "ink-docstrap": "^1.2.1",
+    "jsdoc": "^3.4.0"
+  }
 }

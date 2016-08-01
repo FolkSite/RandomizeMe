@@ -11,12 +11,14 @@ var options = {
 	},
 	actions: {
 		number: function(min, max) {
+			// Переопределяем встроенный метод number
 			return Randomize.tools.Number(min, max);
 		},
-		choice: function() {
-			return Randomize.tools.Choice(...arguments);
+		choice: function(array, num, mode) {
+			// Переопределяем встроенный метод choice
+			return Randomize.tools.Choice(array, num, mode);
 		},
-		objects: function() {
+		names: function() {
 			let $array = [{
 				name: "Федор"
 			}, {
@@ -40,17 +42,17 @@ var options = {
 			return $value;
 		},
 		food: function() {
-			let $count = Randomize.render(' по цене [[ number(50, 150) ]] р. за [[ number(1, 10) ]] [[ choice(["кг", "г"],1,true) ]]');
+			let $count = Randomize.render(' по цене [[ number(50, 150) ]] р. за [[ number(1, 10) ]] [[ choice(["кг", "г", "шт"], 1, true) ]]');
 			let $array = ["селёдочку", "колбаску", "грибочки", "огурчики"];
 			let $index = Randomize.tools.Choice($array);
 			return $array[$index] + $count;
 		}
 	}
-}
+};
 
 Randomize.configure(options);
 
-var template = "Нашего директора зовут [[ objects ]] и поэтому наш [[ who ]] [[ action ]] вам [[ food ]].";
+var template = "Нашего директора зовут [[ names ]] и поэтому наш [[ who ]] [[ action ]] вам [[ food ]].";
 
 var result = Randomize.render(template);
 
