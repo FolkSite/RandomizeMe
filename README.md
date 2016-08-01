@@ -28,7 +28,7 @@ $ ./jdocs.sh
 
 Все предложения, вопросы, недочеты прошу присылать на адрес: [contact@freelanceronline.ru](mailto:contact@freelanceronline.ru).
 
-Или можете присоединиться к разработке, дополнив код и открыв PullRequest.
+Или можете присоединиться к разработке, дополнив код или открыв [Issue](https://github.com/yarkovaleksei/RandomizeMe/issues).
 
 - - -
 ## Использование

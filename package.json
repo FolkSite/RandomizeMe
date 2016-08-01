@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/yarkovaleksei/RandomizeMe/issues"
   },
-  "homepage": "https://yarkovaleksei.github.com/RandomizeMe",
+  "homepage": "https://yarkovaleksei.github.io/RandomizeMe",
   "devDependencies": {
     "ink-docstrap": "^1.2.1",
     "jsdoc": "^3.4.0"
