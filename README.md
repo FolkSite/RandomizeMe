@@ -6,7 +6,7 @@
 **NPM:**
 
 ```bash
-$ npm i -S randomizeme
+$ npm install --save randomizeme
 ```
 
 **BOWER:**
@@ -20,6 +20,7 @@ $ bower install --save randomizeme
 ```bash
 $ git clone origin git@github.com:yarkovaleksei/RandomizeMe.git
 $ cd RandomizeMe
+$ npm install
 # Сгенерируем документацию
 $ chmod +x jdocs.sh
 $ ./jdocs.sh
