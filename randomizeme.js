@@ -167,7 +167,7 @@
 	 * 
 	 * @name RandomizeMe
 	 * 
-	 * @param   {Object} options Объект конфигурации. Можно передать его позже, через метод configure.
+	 * @param   {Object} [options] Объект конфигурации. Можно передать его позже, через метод configure.
 	 */
 	var RandomizeMe = RandomizeMe || (function(options) {
 		let self = this;
