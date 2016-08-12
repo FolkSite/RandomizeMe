@@ -50,7 +50,10 @@
 		 */
 		self.merge = function() {
 			let $new = {};
-			let $args = Array.prototype.slice.call(arguments);
+			let $args;
+			for(let i = arguments.length, a = $args = new Array(i); i--;){
+				a[i] = arguments[i];
+			}
 			while ($args.length) {
 				let $arg = $args.shift();
 				for (let $prop in $arg) {
@@ -82,7 +85,7 @@
 		 * var randInt = tools.Number(); 
 		 * console.log(randInt); // 0 или 1
 		 * 
-		 * @returns {Object}
+		 * @returns {Number}
 		 */
 		self.Number = function(min, max) {
 			let $min = (min && typeof(min) === 'number') ? min : 0;
@@ -92,9 +95,9 @@
 		};
 
 		/**
-		 * Метод возвращает случайный индекс последовательности _array.
-		 * Если передан аргумент _num, то вернется массив случайных 
-		 * индексов последовательности _array в количестве _num элементов.
+		 * Метод возвращает случайный индекс последовательности array.
+		 * Если передан аргумент num, то вернется массив случайных 
+		 * индексов последовательности array в количестве num элементов.
 		 *
 		 * @memberof RTools
 		 * 
