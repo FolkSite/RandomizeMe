@@ -1,5 +1,7 @@
 # RandomizeMe
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yarkovaleksei/RandomizeMe.svg)](https://greenkeeper.io/)
+
 ![](https://david-dm.org/yarkovaleksei/RandomizeMe.svg)
 
 - - -
