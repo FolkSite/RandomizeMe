@@ -1,5 +1,7 @@
 # RandomizeMe
 
+![](https://david-dm.org/yarkovaleksei/RandomizeMe.svg)
+
 - - -
 ## Установка
 
