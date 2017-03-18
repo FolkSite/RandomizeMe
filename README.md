@@ -1,6 +1,8 @@
 # RandomizeMe
 
-![](https://david-dm.org/yarkovaleksei/RandomizeMe.svg)
+[![Package Quality](http://npm.packagequality.com/badge/RandomizeMe.png)](http://packagequality.com/#?package=RandomizeMe)
+
+[![Package Quality](http://npm.packagequality.com/shield/RandomizeMe.svg)](http://packagequality.com/#?package=RandomizeMe)  ![](https://david-dm.org/yarkovaleksei/RandomizeMe.svg)
 
 - - -
 ## Установка
